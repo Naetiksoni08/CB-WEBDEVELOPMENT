@@ -13,6 +13,7 @@ function download(url, cb) {
   function compress(file, cb) {
     console.log(`${file} started to compress`);
     const compressedFile = file.split(".")[0] + ".zip";
+    // file.replace('jpg','zip);
     setTimeout(() => {
       cb(compressedFile);
     }, 2000);
