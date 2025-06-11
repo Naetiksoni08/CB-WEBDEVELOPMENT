@@ -1,0 +1,34 @@
+.parent{
+    background-color: yellow;
+    padding: 10px;
+
+}
+.child{
+    background-color: blue;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: white;
+}
+#special{
+    position: relative;
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* position 
+1. absolute
+2. relative
+3. fixed
+4. sticky 
+5. static(by default)*/

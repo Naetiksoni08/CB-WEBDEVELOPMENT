@@ -1,0 +1,46 @@
+.container{
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: 100px  100px  100px  100px ;
+}
+
+
+
+.child{
+    background-color: yellow;
+    border: 2px solid black;
+    font-size: grow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child{
+    grid-area: a1;
+
+}
+
+.child{
+    grid-area: a2;
+    
+}
+
+.child{
+    grid-area: a3;
+    
+}
+
+.child{
+    grid-area: a4;
+    
+}
+
+.child{
+    grid-area: a5;
+    
+}
+
+.child{
+    grid-area: a6;
+    
+}

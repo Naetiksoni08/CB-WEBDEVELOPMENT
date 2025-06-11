@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+
+h1 {
+    position: relative;
+    left: 90px;
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+    font-size:35px;
+
+}
+
+.container {
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    width: 1300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.card {
+    /* margin: 20px auto; */
+    /* border: 2px solid red; */
+    border: 1px solid white;
+    width: 380px;
+    padding: 12px;
+    border-radius: 20px;
+
+
+}
+
+.cardheader {
+    /* border: 2px solid blue; */
+    position: relative;
+
+    img {
+        border-radius: 20px;
+        width: 100%;
+    }
+}
+
+.cardfooter div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    align-items: center;
+
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.rating {
+    background-color: #267E3E;
+    padding: 2px 4px;
+    border-radius: 6px;
+    color: white;
+    font-weight: 600px;
+    font-size: 14px;
+}
+
+.cl-gray {
+    color: rgba(128, 128, 128, 0.816);
+}
+
+.badge {
+    background-image: linear-gradient(to right, blue, blue, rgba(255, 255, 255, 0));
+    color: white;
+    padding: 3px 12px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    gap: 10px;
+
+    div {
+        width: 20px;
+        /* border: 2px solid red; */
+
+    }
+
+    span {
+        flex-grow: 1;
+    }
+}
+
+.card:hover {
+    border: 1px solid rgba(211, 211, 211, 0.765);
+    box-shadow: 2px 2px 30px rgba(128, 128, 128, 0.37);
+    cursor: pointer;
+
+}
+.op{
+        border-radius: 20px;
+        width: 80%;
+        display: block;
+        margin: 0px auto;
+        padding-top: 30px;
+}
+     /* block element kee hisab se aise center karte hai but  */
+
+    
+     

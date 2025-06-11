@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.header{
+    background-color: #F7F4ED;
+    border-bottom: 1px solid black;
+       
+}
+
+nav {
+    border: 1px solid black;
+    display: flex;
+    padding: 30px 90px;
+    justify-content: space-between;
+    background-color: rgb(252, 249, 249);
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.left {
+    /* border-bottom: 2px solid black; */
+    width: 112px;
+}
+
+.left img {
+    width: 100%;
+}
+
+.right {
+    /* border: 2px solid blue; */
+    font-size: 20px;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+
+
+}
+
+ul li:last-child a {
+    background-color: black;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 10px 18px;
+}
+
+ul li:last-child a {
+    color: white;
+}
+@media (max-width: 730px) {
+    /* ul li:nth-child(1),  ul li:nth-child(2), ul li:nth-child(3){
+        display: none;
+    }
+        first option 
+     */ 
+
+     .left{
+        display: none;
+     }
+    
+     
+     ul{
+        flex-direction: column;
+     }
+     nav{
+        justify-content: center;
+     }
+    
+
+    
+}

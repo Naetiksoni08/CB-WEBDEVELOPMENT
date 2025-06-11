@@ -1,0 +1,45 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    
+}
+
+.box{
+    animation: moveforward 1s ease-in-out forwards,
+               movedownward 1s ease-in-out 2s forwards,
+               moveback 1s ease-in-out 4s forwards,
+               moveupward 1s ease-in-out 6s forwards;
+
+    
+}
+
+
+
+@keyframes moveforward {
+    100%{
+        transform: translateX(250px);
+    }
+    
+
+    
+}
+@keyframes movedownward {
+    100%{
+        transform: translateX(250px) translateY(250px);
+    }
+    
+}
+@keyframes moveback {
+    100%{
+        transform: translateY(250px) translateX(0);
+    }
+    
+}
+@keyframes moveupward {
+    100%{
+        transform: translateX(0);
+    }
+    
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind css</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="flex items-center justify-between border-b-2 bg-yellow-400 text-amber-950 px-4 py-2">
+            <!-- HOME: Always visible -->
+            <li class="p-4 font-bold">HOME</li>
+
+            <!-- SERVICES, CONTACT US, ABOUT: Only visible on >= 640px, spaced evenly -->
+            <div class="hidden sm:flex sm:justify-evenly font-bold w-full">
+                <li class="p-4">SERVICES</li>
+                <li class="p-4">CONTACT US</li>
+                <li class="p-4">ABOUT</li>
+            </div>
+
+            <!-- LOG IN: Always visible, no extra space -->
+            <li class="p-4 font-bold">LOG IN</li>
+        </ul>
+    </nav>
+</body>
+</html>
+
+<!-- px is for left right and py is for top bottom and tailwind css use both left right top bottom and start end (which is left right only ) and top bottom  -->
+<!-- tailblocks.css has a lot of tailwind already made components -->
+
+<!-- Yes, in Tailwind CSS, if you want to use a custom value for properties (such as width, height, padding, margin, etc.), you need to enclose the value in square brackets [].
+  -->
+
+  <!-- <div class="w-[50vw]">
+     Content here
+  </div> -->
+
+  <!-- <div class="p-[10px]">
+   Content here
+  </div> -->
+
+  <!-- also why tailwind is better than bootstrap because bootstrap has a lot of restriction and constraints very limited properties wherease a website made through bootstrap are usually similar because u can not add ur own custom styles into it where ase in tailwind u can add ur custom styles color by enlcosing them in []  -->

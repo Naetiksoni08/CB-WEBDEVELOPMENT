@@ -1,0 +1,90 @@
+/* span{
+    color: red;
+} */
+
+
+/* descendent selector */
+
+div p span{
+    color: red;
+}
+
+
+/* child combinator */
+div > span{
+    color: blue;
+}
+
+/* immediate selector */
+p+div{
+    color: yellowgreen;
+}
+
+/* this is general sibling it access all the general sibling inside the p tag that are div mtlb p ke general sibling div */
+p~div{
+    color: orange;
+}
+
+
+/* pseudo selector */
+a:visited{
+    color: red;
+}
+a:link{
+    color: green;
+}
+
+a:active{
+    color: yellow;
+}
+a:hover{
+    color: purple;
+}
+
+
+ul li:first-child{
+    color: orange;
+}
+ul li:last-child{
+    color: aquamarine;
+}
+
+ul li:nth-child(4) {
+    color: blue;
+
+}
+
+ul li:nth-child(2n) {
+    color: brown;
+    background-color: beige;
+
+}
+
+ul li:nth-child(2n+1) {
+    color: aqua;
+    background-color: red;
+}
+
+/* focus state */
+input:focus{
+    font-size: 50px;
+}
+
+
+
+/* pseudo elements agar :: toh it is pseudo elements otherwise : agar ye laga hai toh sirf pseudo class */
+
+
+li ::before{
+    content: "❤️";
+}
+li::after{
+    content: "🙈👀";
+}
+
+/* command control space is for opening emoji panel */
+
+
+div p::first-letter{
+    font-size: 40px;
+}

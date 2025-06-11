@@ -1,0 +1,39 @@
+/* this is a element selector */
+h1{
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+
+} 
+
+
+/* this is a id selector if u assign a same id to other li or that it wont give you a error but it is not valid you should always give the id unique */
+#special-li{
+    color: green;
+
+}
+
+
+
+/* class selector */
+.fav{
+    color: blue;
+}
+
+
+
+/* attribute selector */
+a[href = "https://www.google.com"]{
+    border: 2px solid black;
+}
+
+
+
+
+
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
