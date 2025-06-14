@@ -1,5 +1,9 @@
-const div  = document.querySelector("div");
+const div  = document.querySelectorAll('.box');
 
-const box = addEventListener("click",(e)=>{
+
+
+for(let box of div) {
+box.addEventListener("click",(e)=>{
     e.target.remove();
 })
+}
