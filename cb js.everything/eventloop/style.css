@@ -1,0 +1,32 @@
+*{
+    text-align: center;
+}
+
+.grand-parent{
+    border: 2px solid black;
+    background-color: aqua;
+    width: 50vw;;
+    padding: 50px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+
+.parent{
+    border: 2px solid black;
+    background-color: royalblue;
+    padding: 50px;
+    font-size: 20px;
+}
+
+
+
+.child{
+    border: 2px solid black;
+    background-color: yellow;
+    padding: 50px;
+    font-size: 20px;
+}
+
+
+

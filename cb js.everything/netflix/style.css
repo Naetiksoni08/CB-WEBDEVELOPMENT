@@ -1,0 +1,3 @@
+section ::-webkit-scrollbar {
+    display: none;
+  }

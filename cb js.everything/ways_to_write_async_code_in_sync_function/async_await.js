@@ -32,6 +32,7 @@ function download(url) {
   
   
   async function main() {
+    try {
     const downloadedFile = await download(url);
     console.log("File downloaded successfully", downloadedFile);
   
@@ -40,6 +41,9 @@ function download(url) {
   
     const finalUrl = await upload(compressedFile);
     console.log("File uploaded successfully to", finalUrl);
+  } catch (error) {
+    console.error("Something went wrong:", error);
   }
-  
+}
+
   main();
