@@ -1,0 +1,38 @@
+*{
+
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to left, black 75%, grey 75%);
+}
+
+.container{
+    width: 60vw;
+    border: 2px solid white;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+#ip{
+    padding: 15px;
+    border: 2px solid white;
+    width: 500px;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 25px ;
+    
+}
+
+.btn{
+    padding: 15px;
+    border: 2px solid white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+}
+h1{
+    color: white;
+}
