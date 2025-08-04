@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>List of Todos</h2>
+
+    <ul>
+        <% for(let todo of todos) { %>
+            <div style="border: 2px solid black; padding-left:10px; margin-bottom: 10px;">
+            <p>Task: <%= todo.Task %> </p>
+            <a style="text-decoration: none; color: black; font-size: 17px; margin: 4px;" href="/todos/<%= todo.id %> ">Show 👉🏻</a>
+            <a style="text-decoration: none; color: black; font-size: 17px; margin: 4px;"
+            href="/todos/<%= todo.id %>/edit ">Edit 👉🏻</a>
+
+            <form action="/todos/<%= todo.id %>?_method=Delete" method="post">
+                <button>Delete</button>
+            </form>
+        </div>
+        <% } %> 
+    </ul>
+    <a style="text-decoration: none; color: black; font-size: 20px;" href="/todos/new">CreateUser 👉🏻</a>
+    
+</body>
+</html>

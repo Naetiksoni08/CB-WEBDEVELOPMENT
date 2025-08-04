@@ -1,0 +1,50 @@
+// create
+instance = new Model({})
+instance.save()
+
+Model.create({}) // create one 
+Model.create([{}, {}]) // create multiple with the help of array
+
+// Read
+Model.findOne() // to find one
+Model.find() // to find many
+
+// Update
+Model.UpdateOne() // to update one
+Model.UpdateMany() // to update many
+
+// Delete
+Model.deleteOne() // to delete one 
+Model.deleteMany() // to deletemany
+
+
+Model.findById()
+Model.findByIdAndUpdate()
+Model.findByIdAndDelete()
+
+
+// operators
+
+$gt
+$gte
+$lt
+$lte
+$eq
+$ne
+$in
+$nin
+
+$and
+$or
+$not
+
+// {releaseYear: {$gte: 18}}
+// {releaseYear: {$lte: 21}}
+
+// { $and: [q1, q2] }
+
+
+
+
+
+//keep this in mind that say u pushed and saved some data on your database and now u re performing some operation on that data like u re performing operators on it while performing just to get the output u made some changes on the array of ur data like here u have const data={array of somedata} and now u wrote a query according to that data but u have saved that data in ur database inside ur db vohi data rakha hua hai joh phele tha tph now when u will do node index.js then u will get null because u have made changes in ur local pc in ur local memory and db mai agar tune Rating likha hai aur query mai tune rating likh dia then also it wont work  yehi toh data inconsistency hoti hai 

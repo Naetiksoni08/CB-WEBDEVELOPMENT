@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/users/<%= user.id %>?_method=PUT" method="post">
+        <input name="firstName" type="text" placeholder="FirstName" value="<%= user.firstName %> "> <br><br>
+        <input name="lastName" type="text" placeholder="LastName" value="<%= user.lastName %> "> <br><br>
+        <input name="age" type="number" placeholder="Age" value="<%= user.age %>"><br><br>
+        
+        <label for="male">Male</label>
+        <input id="male" type="radio" name="gender" value="male" <%= user.gender === "male" ? "checked" : "" %>>
+        
+        <label for="female">Female</label>
+        <input id="female" type="radio" name="gender" value="female" <%= user.gender === "female" ? "checked" : "" %>>
+        
+        <label for="others">Others</label>
+        <input id="others" type="radio" name="gender" value="others" <%= user.gender === "others" ? "checked" : "" %>> <br><br>
+        
+
+        <input name="profession" type="text" placeholder="Profession" value="<%= user.profession %> "><br><br>
+        <button>Save</button>
+
+    </form>
+    
+</body>
+</html>
