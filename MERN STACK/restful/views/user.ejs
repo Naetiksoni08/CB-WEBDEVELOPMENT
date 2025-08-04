@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2>All users</h2>
+    <ul>
+
+        <% for(let user of users) { %>
+            <div style="border: 2px solid black; padding: 10px; margin-bottom: 10px;">
+                <p>FIRSTNAME: <%= user.firstName %>
+                </p>
+                <p>LASTNAME: <%= user.lastName %>
+                </p>
+                <p>AGE: <%= user.age %>
+                </p>
+                <p>GENDER: <%= user.gender %>
+                </p>
+                <p>PROFESSION: <%= user.profession %>
+                </p>
+                <a style="text-decoration: none; color: black; font-size: 17px; margin: 4px;"
+                    href="/users/<%= user.id %>">Show user</a> <br>
+                <a style="text-decoration: none; color: black; font-size: 17px; margin: 4px;"
+                    href="/users/<%= user.id %>/edit ">Edit</a>
+
+                <form action="/users/<%= user.id %>?_method=Delete" method="post">
+                    <button>Delete</button>
+                </form>
+
+            </div>
+            <% } %>
+
+    </ul>
+
+    <a style="text-decoration: none; color: black; font-size: 20px;" href="/users/new">CreateUser 👉🏻</a>
+
+</body>
+
+</html>
