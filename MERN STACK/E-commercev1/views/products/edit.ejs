@@ -1,0 +1,28 @@
+<% layout('/layouts/boilerplate') -%>
+
+      <div class="container-fluid mt-4">
+    
+<div class="container mt-4 ">
+    <form action="/products/<%= product._id %>?_method=PUT" method="post">
+        <div class="mb-3">
+            <label for="name" class="form-label">Product name</label>
+            <input name="name" type="text" class="form-control" id="name" value="<%= product.name %>">
+          </div>
+          <div class="mb-3">
+            <label for="price" class="form-label">Product Price</label>
+            <input name="price" type="number" class="form-control" id="price"  value="<%= product.price %>">
+          </div>
+          <div class="mb-3">
+            <label for="Image" class="form-label">Product Image</label>
+            <input name="Image" type="text" class="form-control" id="Image"  value="<%= product.Image %>">
+          </div>
+          <div class="mb-3">
+            <label for="description"  class="form-label">Product Description</label>
+            <textarea name="description" class="form-control" id="description" rows="3"> <%= product.description %></textarea>
+          </div>
+          <button class="btn btn-sm btn-success">Save Product</button>
+        </form>
+       
+    </div>
+
+  </div>

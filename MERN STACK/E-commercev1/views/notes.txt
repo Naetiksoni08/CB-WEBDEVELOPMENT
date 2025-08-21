@@ -1,0 +1,21 @@
+<!-- <div>
+  <% if (err && err.message && process.env.NODE_ENV === "dev") { %>
+   <p><%= err.message %></p>
+  <% } %>
+
+<!-- && process.env.NODE_ENV === "dev"  basically check karlete hai upar wale if ke sath-->
+
+
+  <% if (process.env.NODE_ENV === "prod") { %>
+    <p>Something went wrong.</p>
+  <% } %>
+</div> -->
+
+
+<% layout('/layouts/boilerplate') -%>
+
+<form action="/login" method="get">
+  <input type="text" name="username" placeholder="Username" />
+  <input type="password" name="password" placeholder="Password" />
+  <button type="submit">Login</button>
+</form>

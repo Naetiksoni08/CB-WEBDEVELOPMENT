@@ -1,0 +1,16 @@
+/* note this css file is the client side css that will render on the browser */
+.card:hover {     
+    cursor: pointer; 
+    box-shadow:  0 8px 16px 0 rgba(0,0,0,0.4);
+}
+
+.card {
+    transition: box-shadow 0.3s ease;
+}
+
+
+div p {
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  
+}
+
