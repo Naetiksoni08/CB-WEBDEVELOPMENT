@@ -1,0 +1,26 @@
+web sockets
+
+--> say if i want to make a or introduce a two way communication or duplex communication 
+--> for example right now we are using an api it is a one way communication how like we sended a request and in return we get the data as a response
+--> we will never ever get a response without request i mean thats what we have studied 
+--> this is called once eay communication
+
+
+--> two way communication is like ki request aaye na aaye we can send response tab bhi 
+--> for example chatting (so whatsapp mai instagram mai web sockets lage hue hai )
+--> same notification system mai i never made a request but im still getting notifications  
+--> ek aur cheez in web, kabhi facebook open karte hai toh notification panel hota hai toh jab mai notification panel par click karta hu toh get hojati hai sari notifications toh basically maaine get request kari uske according mujhe response mai data mil gaya 
+--> but web socket mai kya hota hai na real time par maine kisi ko request send kari thi 10 din phele toh ab aaj usnai accept kari hai request toh mujhe real tine par notification aai hai toh maine toh koi request nai kari thi toh voh joh notification aaya voh server nai send kardia toh yeh web socket hai 
+
+--> basically server aur client ke beech mai ek pipeline hoti hai 
+
+
+--> ek aur cheez hoti hai polling 
+--> imagine ek server hai aur ek client hai toh maine dono ke beech mai pipeline bana diye so web socket hua ki maan le maine leetcode pr question solve kia toh maine run kia toh request jayegi toh leetocde  run karega code ab jab bhi uska code run ho jayega toh voh ussi pipeline ke through respone bhej dega this is web socket
+--> ab aai baat polling ki polling is achieved through api  (web socket is a good version as compared to polling but it is difficult to maintain web socket)  
+--> ab dekh polling mai kya hoga mere paas ek server hai aur ek client ab user nai kopi question kia leetcode pr toh server mai mera code jakar save hogaya right toh jaise hi server ke paas data poch gaya server tabhi ek repsone dega ki bro ur code is saved and safe with me fir vapas sai client joh hai vapas sai request karega ki bhai kya mera code chal gaya toh voh bolega server ki nai bhai agar fir client continously monitor karega ki bhai ab chal jayega voh bolega nai bhai fir again fir 10 sec baad say ab aap ko true mil gaya ki bhai yeh raha code ka output .. this is polling aur leetcode bhi plling use karta haia ur web socket is a better version of this 
+--> polling mai mujhe baar baar request karni padh rahi hai 
+--> web socket mai kya hota hai ki jab aapne request kari toh toh sabsai phele server aur client ke beech mai hota hai handshake aur voh handshake joh hai evolve kar jaata hai in a pipeline(the pipeline is like a permanenet connection ab we dont need a req for a respone so this is a two way communication) 
+
+--> polling ka examplehai otp ki 30 sec mai resend otp continously monitor kar te ho 
+--> so basically getdata ke baad just hum ek socket ka connection bana dete hai jaise hi page mount hua vaise hi we made a connection of socket aur jaise hi unmount hua toh hum close kardenge connection
