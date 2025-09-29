@@ -2,7 +2,6 @@ const UserModel = require("../models/user.models");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
-
 const JWT_SECRET = process.env.JWT_SECRET;
 
 
@@ -75,8 +74,10 @@ module.exports.login = async (req, res) => {
 
 module.exports.register = async (req, res) => {
     try {
-        const { username, password, email } = req.body;
+        let {Fullname, username, password, email } = req.body;
 
+        if (!Fullname)
+            res.status(400).json({ success: false, message: "Fullname required" });
         if (!username)
             res.status(400).json({ success: false, message: "username required" });
         if (!email)
@@ -84,6 +85,7 @@ module.exports.register = async (req, res) => {
         if (!password)
             res.status(400).json({ success: false, message: "password required" });
 
+        Fullname = Fullname.trim(); // as we are trimming the fullname here so we need to make the vairbale let from const 
         const user = await UserModel.findOne({ username });
 
         if (user) {
@@ -99,6 +101,7 @@ module.exports.register = async (req, res) => {
         await UserModel.create({
             username,
             email,
+            Fullname,
             password: hashedPassword
         });
 

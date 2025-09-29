@@ -1,7 +1,9 @@
-import React from 'react'
-import {v4 as uuid} from "uuid";
+import React, { useContext} from 'react'
 
-function TodoForm({addTodo}) { // todos in props without use state
+
+const {addTodo} = useContext();
+
+function TodoForm() { // todos in props without use state
  
     let inpText = "";
     const submithandler = (e)=>{
@@ -25,10 +27,6 @@ function TodoForm({addTodo}) { // todos in props without use state
     
 // console.log(inpText)
     }
-
-
-
-
 
 
 
